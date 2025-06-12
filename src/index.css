@@ -1,0 +1,211 @@
+/* Font import - must be before other styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Dancing+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 253 248 245;
+    --foreground: 51 46 43;
+
+    --card: 255 255 255;
+    --card-foreground: 51 46 43;
+
+    --popover: 255 255 255;
+    --popover-foreground: 51 46 43;
+
+    --primary: 210 159 122;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 251 241 235;
+    --secondary-foreground: 139 118 102;
+
+    --muted: 247 242 237;
+    --muted-foreground: 139 118 102;
+
+    --accent: 251 241 235;
+    --accent-foreground: 139 118 102;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 239 229 219;
+    --input: 239 229 219;
+    --ring: 210 159 122;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 51 46 43;
+    --foreground: 253 248 245;
+    --card: 51 46 43;
+    --card-foreground: 253 248 245;
+    --popover: 51 46 43;
+    --popover-foreground: 253 248 245;
+    --primary: 210 159 122;
+    --primary-foreground: 255 255 255;
+    --secondary: 68 61 56;
+    --secondary-foreground: 253 248 245;
+    --muted: 68 61 56;
+    --muted-foreground: 180 170 157;
+    --accent: 68 61 56;
+    --accent-foreground: 253 248 245;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 68 61 56;
+    --input: 68 61 56;
+    --ring: 210 159 122;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #d2a87a 0%, #e6c4a1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+/* Add these animation classes if not already present */
+@keyframes bounce-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-bounce-left {
+  animation: bounce-left 1.2s forwards;
+}
+
+.animate-bounce-right {
+  animation: bounce-right 1.2s forwards;
+}
+
+/* Make sure your tailwind.config.js includes */
+/* 
+fontFamily: {
+  script: ['Dancing Script', 'cursive'],
+}
+*/
+
+/* Add this animation if not already present */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1.5s forwards;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
