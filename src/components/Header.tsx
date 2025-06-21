@@ -63,7 +63,7 @@ const Header = () => {
   return (
     <>
       <header 
-        className={`fixed top-0 w-full bg-white z-50 transition-transform duration-300 ${
+        className={`fixed top-0 w-full bg-off-white z-50 transition-transform duration-300 ${
           visible ? 'translate-y-0' : '-translate-y-full'
         }`}
       >

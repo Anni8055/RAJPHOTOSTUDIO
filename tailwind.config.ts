@@ -73,7 +73,8 @@ export default {
 					700: '#b85c2a',
 					800: '#944928',
 					900: '#7a3e25'
-				}
+				},
+				'off-white': '#f8f5f1'
 			},
 			fontFamily: {
 				'script': ['Dancing Script', 'cursive'],

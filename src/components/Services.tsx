@@ -47,14 +47,14 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-off-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Intro Section */}
         <div className="text-center mb-20">
           <p className="text-sm uppercase tracking-wider text-gray-600 mb-2">
             WELCOME TO
           </p>
-          <h2 className="font-script text-5xl text-black mb-6">
+          <h2 className="font-script text-5xl text-black mb-6 font-light tracking-wide">
             Timeless Moments, Unforgettable Memories
           </h2>
           <div className="relative max-w-3xl mx-auto">
@@ -82,7 +82,7 @@ const Services = () => {
                 alt="Wedding cake" 
                 className="w-full h-[400px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-white/80 p-3 text-center">
+              <div className="absolute bottom-0 left-0 right-0 bg-off-white/80 p-3 text-center">
                 <div className="text-[#9B8F4B] text-lg font-medium">
                   Wedding cake
                 </div>
@@ -95,7 +95,7 @@ const Services = () => {
             <p className="text-sm uppercase tracking-wider text-gray-600 mb-2">
               EXPLORE MY
             </p>
-            <h3 className="font-script text-4xl text-black mb-8">
+            <h3 className="font-script text-4xl text-black mb-8 font-light tracking-wide">
               Services
             </h3>
             

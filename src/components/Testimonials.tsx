@@ -133,7 +133,7 @@ const Testimonials = () => {
           <div className="bg-[#333] text-white px-3 py-1 text-xs uppercase tracking-wider inline-block mb-4">
             RAJ PHOTO STUDIO
           </div>
-          <h2 className="font-script text-5xl md:text-6xl text-white mb-8">
+          <h2 className="font-script text-5xl md:text-6xl text-white mb-8 font-light tracking-wide">
             Clients Love
           </h2>
         </div>
@@ -147,7 +147,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className={`bg-white p-8 rounded-none shadow-lg flex-shrink-0 w-[400px] snap-center transition-all duration-700 ${
+              className={`bg-off-white p-8 rounded-none shadow-lg flex-shrink-0 w-[400px] snap-center transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ 
@@ -182,11 +182,13 @@ const Testimonials = () => {
       </div>
       
       {/* Custom CSS for hiding scrollbar */}
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }
-      `}</style>
+        `
+      }} />
     </section>
   );
 };

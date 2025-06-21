@@ -69,7 +69,7 @@ const WhyChooseMe = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 bg-white overflow-hidden">
+    <section ref={sectionRef} className="py-20 bg-off-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Why Me Content */}

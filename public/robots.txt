@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.com/sitemap.xml
+# Don't allow crawling of admin pages
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/dashboard
+
+# Don't allow crawling of private galleries
+Disallow: /gallery/
+
+# Sitemap location
+Sitemap: https://rajphotostudio.com/sitemap.xml

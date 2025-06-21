@@ -38,7 +38,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-off-white">
       <div className="container mx-auto px-6">
         <div className="relative">
           {/* Dreamy Frames tag */}
@@ -62,7 +62,7 @@ const About = () => {
               </div>
               
               {/* Second image (photographer) that overlaps - replaced with lighter image */}
-              <div className="absolute right-0 top-1/3 w-2/3 h-auto aspect-square overflow-hidden border-8 border-white shadow-lg">
+              <div className="absolute right-0 top-1/3 w-2/3 h-auto aspect-square overflow-hidden border-8 border-off-white shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Photographer with camera" 
@@ -81,7 +81,7 @@ const About = () => {
                 ABOUT ME
               </h3>
               
-              <h2 className="font-script text-4xl md:text-5xl text-black relative z-10">
+              <h2 className="font-script text-4xl md:text-5xl text-black relative z-10 font-light tracking-wide">
                 About me
               </h2>
               

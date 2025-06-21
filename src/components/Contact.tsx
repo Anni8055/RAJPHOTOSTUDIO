@@ -112,7 +112,7 @@ const Contact = () => {
             
             {/* White card with top padding for text */}
             <div 
-              className={`bg-white p-8 md:p-10 shadow-xl w-full transition-all duration-1000 ${
+              className={`bg-off-white p-8 md:p-10 shadow-xl w-full transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
               }`}
               style={{

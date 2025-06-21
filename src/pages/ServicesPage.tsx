@@ -3,11 +3,11 @@ import Footer from "@/components/Footer";
 
 const ServicesPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-off-white">
       <Header />
       <div className="pt-32 pb-20 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="font-script text-4xl md:text-6xl text-[#9B8F4B] mb-6">
+          <h1 className="font-script text-4xl md:text-6xl text-[#9B8F4B] mb-6 font-light tracking-wide">
             Our Services
           </h1>
           <div className="w-24 h-0.5 bg-[#9B8F4B] mx-auto mb-8"></div>
@@ -19,7 +19,7 @@ const ServicesPage = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-off-white shadow-lg rounded-lg overflow-hidden">
             <div 
               className="h-64 bg-cover bg-center"
               style={{
@@ -35,7 +35,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-off-white shadow-lg rounded-lg overflow-hidden">
             <div 
               className="h-64 bg-cover bg-center"
               style={{
@@ -51,7 +51,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-off-white shadow-lg rounded-lg overflow-hidden">
             <div 
               className="h-64 bg-cover bg-center"
               style={{
